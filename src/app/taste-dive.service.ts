@@ -9,7 +9,7 @@ export class TasteDiveService {
   url = "https://tastedive.com/api/similar";
   entertainmentResults: any[] = [];
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {  }
 
   getTaste() {
     const requestUrl = 
