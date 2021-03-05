@@ -27,7 +27,7 @@ export class TasteDiveService {
   }
 
   getUrlWithAPIKey() {
-    return 'https://tastedive.com/api/similar?q=underworld&k=404369-AprilTop-1D5TOMF0'
+    return 'http://localhost:8080/api/similar?info=1&q=underworld&k=404369-AprilTop-1D5TOMF0'
     // return `${this.url}?k=${this.apiKey}`;
     // return `${this.url}?  &k=${this.apiKey}`;
   }
