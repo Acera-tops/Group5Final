@@ -5,15 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
-import { QuizComponent } from './quiz/quiz.component';
 import { HomeComponent } from './home/home.component';
+import { QuizResultsComponent } from './quiz-results/quiz-results.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuestionsComponent,
-    QuizComponent,
-    HomeComponent
+    HomeComponent,
+    QuizResultsComponent
   ],
   imports: [
     BrowserModule,
