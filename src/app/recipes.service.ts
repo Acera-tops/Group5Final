@@ -22,7 +22,7 @@ export class RecipesService {
     this.http.get(requestUrl).subscribe(
       (response: any) => {
         console.log(response);
-        // this.recipes = response.hits;
+        this.recipes = response.hits;
       },
       (error) => {
         console.error(error);
