@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { HomeComponent } from './home/home.component';
 import { QuizResultsComponent } from './quiz-results/quiz-results.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { QuizResultsComponent } from './quiz-results/quiz-results.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
