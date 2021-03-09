@@ -13,7 +13,7 @@ export class TasteDiveService {
 
   getTaste() {
     const requestUrl = 
-      this.getUrlWithAPIKey(); // add whatever params you want from here: https://developers.themoviedb.org/3/discover/movie-discover
+      this.getUrlWithAPIKey(); 
       console.log(requestUrl)
 
     this.http.get(requestUrl).subscribe(
