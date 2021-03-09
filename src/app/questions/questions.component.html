@@ -1,13 +1,43 @@
-<p>questions works!</p>
+<h2>Let's find your perfect night in!</h2>
 
-<h2>Quiz Question Brainstorm:</h2>
-<ul>
-    <li>How would you like to feel today?</li>
-        <!-- More alive, Happier, loved, smart -->
-    <li>How many people will be participating?</li>
-        <!-- 1-4, 5-10(more finger food), 10+ (outdoors and finger food) -->
-    <li>Which vacation looks the best right now?</li>
-        <!-- I saved a Photo of space (sci-fi), France (romance), New York (action), soemthing for comedy-->
-    <li>Which looks delicious?</li>
-        <!-- picture of meals? -->
-</ul>
+<form>
+    <h3>How would you like to feel today?</h3>
+    <input [(ngModel)]="happy" type="radio" name="question1a" value="happy">
+    <label for="happy">happy</label>
+    <input [(ngModel)]="alive" type="radio" name="question1b" value="alive">
+    <label for="alive">alive</label>
+
+    <h3>How many poeple will be participating?</h3>
+    <input [(ngModel)]="four" type="radio" name="question2a" value="four">
+    <label for="four">up to four</label>
+    <input [(ngModel)]="five" type="radio" name="question2b" value="five">
+    <label for="five">five +</label>
+
+    <h3>Which vacation looks the best right now?</h3>
+    <div>
+        <input [(ngModel)]="adventure" type="radio" name="question3a" value="adventure">
+        <img src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2016/9/12/1/GettyImages-584615614-adventure-vacations-wingsuit-flying-canyon-jumping.jpg.rend.hgtvcom.966.725.suffix/1491594421027.jpeg">
+        <label for="adventure"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="romance" type="radio" name="question3b" value="romance">
+        <img src="https://ssl.tzoo-img.com/images/tzoo.1.0.567887.C-vacation-Romantic-shutterstock-paris.jpg?width=1080">
+        <label for="romance"></label>
+    </div>
+    
+
+    <h3>Which looks more delicious?</h3>
+    <div>
+        <input [(ngModel)]="veggies" type="radio" name="question4a" value="veggies">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/27/0/EI1C03_Grilled-Vegetables_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382539859292.jpeg">
+        <label for="veggies"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="meat" type="radio" name="question4b" value="meat">
+        <img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
+        <label for="meat"></label>
+    </div>
+    
+    <button (click)="getResults()">Submit</button>
+
+</form>
