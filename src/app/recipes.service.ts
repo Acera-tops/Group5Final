@@ -30,6 +30,7 @@ export class RecipesService {
     );
   }
 
+
   getUrlWithAPIKey() {
     return `${this.url}?app_id=${this.appId}&app_key=${this.apiKey}`;
   }

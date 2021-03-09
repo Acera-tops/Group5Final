@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class TasteDiveService {
   apiKey = "404369-AprilTop-1D5TOMF0";
-  url = "https://tastedive.com/api/similar";
+  url = "http://localhost:8080/api/similar";
   entertainmentResults: any[] = [];
 
   constructor(private http: HttpClient) { }
@@ -27,7 +27,7 @@ export class TasteDiveService {
   }
 
   getUrlWithAPIKey() {
-    return 'http://localhost:8080/api/similar?info=1&q=underworld&k=404369-AprilTop-1D5TOMF0'
+    return 'http://localhost:8080/api/similar?q=Guardians%20Of%20The%20Galaxy%20Vol.%202&k=404369-AprilTop-1D5TOMF0'
     // return `${this.url}?k=${this.apiKey}`;
     // return `${this.url}?  &k=${this.apiKey}`;
   }
