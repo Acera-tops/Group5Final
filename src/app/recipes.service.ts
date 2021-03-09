@@ -10,7 +10,7 @@ export class RecipesService {
   url = "https://api.edamam.com/search";
   recipes: any[] = [];
   // favorites: any[] = [];
-  // searchTerm: string = "";
+  searchTerm: string = "";
   constructor(private http: HttpClient) { }
 
 
@@ -22,7 +22,7 @@ export class RecipesService {
     this.http.get(requestUrl).subscribe(
       (response: any) => {
         console.log(response);
-        // this.recipes = response.hits;
+        this.recipes = response.hits;
       },
       (error) => {
         console.error(error);
@@ -30,11 +30,6 @@ export class RecipesService {
     );
   }
 
-
   getUrlWithAPIKey() {
     return `${this.url}?app_id=${this.appId}&app_key=${this.apiKey}`;
-  }
-}
-
-
-
+  }}
