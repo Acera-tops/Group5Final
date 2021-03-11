@@ -1,8 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
 
 <!-- The routed views render in the <router-outlet>-->
-
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <h1 class="display-1" href="#">Netflix and Grill</h1>
@@ -26,9 +35,9 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/Quiz">Take the Quiz</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" routerLink="/Results">Quiz Results</a>
-          </li>
+          </li> -->
         </ul>
         <!-- Search Bar: need to create search function for this if we want thsi functionality - April -->
         <!-- <div class="d-flex">
@@ -37,7 +46,7 @@
             [(ngModel)]="searchTerm"
             class="form-control me-2"
             type="search"
-            placeholder="Search for a recipe!"
+            placeholder="Search"
             aria-label="Search"
           />
           <button
@@ -53,23 +62,13 @@
     </div>
   </nav>
   
+
+
   <router-outlet></router-outlet>
 
+<script src="" async defer></script>
+</body>
+</html>
 
-
-
-
-
-<nav>
-    <h1>Netflix & Grill</h1>
-  <ul class="links">
-    <li><a routerLink="">Home</a></li>
-    <li><a routerLink="/favorites">Favorites</a></li>
-  </ul>
-</nav>
-
-<app-home></app-home>
-<app-questions></app-questions>
-<app-quiz-results></app-quiz-results>
 
 
