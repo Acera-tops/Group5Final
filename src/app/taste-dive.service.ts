@@ -18,12 +18,8 @@ export class TasteDiveService {
 
     this.http.get(requestUrl).subscribe(
       (response: any) => {
-        this.entertainmentResults = response.similar;
-        console.log(response);
-        console.log(response.similar);
-        console.log(response.response);
-        console.log(response.Info);
-        console.log(response.Results);
+        this.entertainmentResults = response.Similar.Results;
+        console.log(this.entertainmentResults);
       },
       (error) => {
         console.error(error);
