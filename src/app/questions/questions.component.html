@@ -1,6 +1,6 @@
 <h2>Let's find your perfect night in!</h2>
 
-<!-- <form>
+<form>
     <h3>How would you like to feel today?</h3>
     <input [(ngModel)]="happy" type="radio" name="question1a" value="happy">
     <img src="https://p7.hiclipart.com/preview/270/858/469/world-emoji-day-smiley-emoticon-sticker-emoji.jpg">
@@ -9,7 +9,7 @@
     <img src="https://www.vhv.rs/dpng/d/9-95316_cool-emoji-transparent-background-hd-png-download.png">
     <label for="alive"></label>
 
-    <h3>How many poeple will be participating?</h3>
+    <h3>How many people will be participating?</h3>
     <input [(ngModel)]="four" type="radio" name="question2a" value="four">
     <label for="four">up to four</label>
     <input [(ngModel)]="five" type="radio" name="question2b" value="five">
@@ -39,6 +39,6 @@
         <label for="meat"></label>
     </div>
     
-    <button (click)="getResults()">Submit</button>
+    <button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
 
-</form> -->
+</form>
