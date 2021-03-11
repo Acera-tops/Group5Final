@@ -2,18 +2,28 @@
 
 <form>
     <h3>How would you like to feel today?</h3>
-    <input [(ngModel)]="happy" type="radio" name="question1a" value="happy">
-    <img src="https://i.pinimg.com/originals/ce/a1/cd/cea1cd4c9185badd83cd50dc5f6e1a31.png">
-    <label for="happy"></label>
-    <input [(ngModel)]="alive" type="radio" name="question1b" value="alive">
-    <img src="https://www.vhv.rs/dpng/d/9-95316_cool-emoji-transparent-background-hd-png-download.png">
-    <label for="alive"></label>
+    <div>
+        <input [(ngModel)]="happy" type="radio" name="question1a" value="happy">
+        <img src="https://i.pinimg.com/originals/ce/a1/cd/cea1cd4c9185badd83cd50dc5f6e1a31.png">
+        <label for="happy"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="alive" type="radio" name="question1b" value="alive">
+        <img src="https://www.vhv.rs/dpng/d/9-95316_cool-emoji-transparent-background-hd-png-download.png">
+        <label for="alive"></label>
+    </div>
+
 
     <h3>How many people will be participating?</h3>
-    <input [(ngModel)]="four" type="radio" name="question2a" value="four">
-    <label for="four">up to four</label>
-    <input [(ngModel)]="five" type="radio" name="question2b" value="five">
-    <label for="five">five +</label>
+    <div>
+        <input [(ngModel)]="four" type="radio" name="question2a" value="four">
+        <label for="four">up to four</label>
+    </div>
+    <div>
+        <input [(ngModel)]="five" type="radio" name="question2b" value="five">
+        <label for="five">five +</label>
+    </div>
+
 
     <h3>Which vacation looks the best right now?</h3>
     <div>
