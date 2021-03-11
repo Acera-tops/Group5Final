@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NetflixAndGrill';
+  show: boolean;
+
+  showNav(){
+    this.show = !this.show;
+  }
+
 }
