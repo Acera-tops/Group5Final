@@ -1,2 +1,8 @@
 
 <h2>This is where quiz results will go</h2>
+
+<!-- put into recipe list component -->
+<div *ngFor="let recipe of recipeAPI.recipes">
+    <h3>{{recipe.recipe.label}}</h3>
+    <img [src]="recipe.recipe.image" />
+</div>
