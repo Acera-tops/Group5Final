@@ -3,12 +3,13 @@
 <form>
     <h3>How would you like to feel today?</h3>
     <div>
-        <input [(ngModel)]="happy" type="radio" name="question1a" value="happy">
-        <img src="https://i.pinimg.com/originals/ce/a1/cd/cea1cd4c9185badd83cd50dc5f6e1a31.png">
-        <label for="happy"></label>
+        <label for="happy">
+            <input [(ngModel)]="question1Answer" type="radio" name="question1" value="happy">
+            <img src="https://i.pinimg.com/originals/ce/a1/cd/cea1cd4c9185badd83cd50dc5f6e1a31.png">
+        </label>
     </div>
     <div>
-        <input [(ngModel)]="alive" type="radio" name="question1b" value="alive">
+        <input [(ngModel)]="question1Answer" type="radio" name="question1" value="alive">
         <img src="https://www.vhv.rs/dpng/d/9-95316_cool-emoji-transparent-background-hd-png-download.png">
         <label for="alive"></label>
     </div>
@@ -16,16 +17,16 @@
 
     <h3>How many people will be participating?</h3>
     <div>
-        <input [(ngModel)]="four" type="radio" name="question2a" value="four">
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="four">
         <label for="four">up to four</label>
     </div>
     <div>
-        <input [(ngModel)]="five" type="radio" name="question2b" value="five">
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="five">
         <label for="five">five +</label>
     </div>
 
 
-    <h3>Which vacation looks the best right now?</h3>
+<!--<h3>Which vacation looks the best right now?</h3>
     <div>
         <input [(ngModel)]="adventure" type="radio" name="question3a" value="adventure">
         <img src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2016/9/12/1/GettyImages-584615614-adventure-vacations-wingsuit-flying-canyon-jumping.jpg.rend.hgtvcom.966.725.suffix/1491594421027.jpeg">
@@ -47,7 +48,7 @@
         <input [(ngModel)]="meat" type="radio" name="question4b" value="meat">
         <img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
         <label for="meat"></label>
-    </div>
+    </div> -->
     
     <button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
 

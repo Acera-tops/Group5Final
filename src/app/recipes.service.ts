@@ -10,13 +10,13 @@ export class RecipesService {
   url = "https://api.edamam.com/search";
   recipes: any[] = [];
   // favorites: any[] = [];
-  foodSearch: string = "";
+  // public foodSearch: string = "";
   constructor(private http: HttpClient) { }
 
 
-  getRecipes() {
+  getRecipes(foodSearch) {
     const requestUrl =
-      this.getUrlWithAPIKey() + "&q=" + this.foodSearch;
+      this.getUrlWithAPIKey() + "&q=" + foodSearch;
       console.log(requestUrl)
 
     this.http.get(requestUrl).subscribe(
