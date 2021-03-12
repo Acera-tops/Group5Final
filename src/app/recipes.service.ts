@@ -16,7 +16,7 @@ export class RecipesService {
 
   getRecipes() {
     const requestUrl =
-      this.getUrlWithAPIKey() + "&q=pizza";
+      this.getUrlWithAPIKey() + "&q=steak";
       console.log(requestUrl)
 
     this.http.get(requestUrl).subscribe(
