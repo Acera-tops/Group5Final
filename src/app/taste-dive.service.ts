@@ -28,7 +28,7 @@ export class TasteDiveService {
   }
 
   getUrlWithAPIKey() {
-    return 'http://localhost:8080/api/similar?q=Guardians%20Of%20The%20Galaxy%20Vol.%202&k=404369-AprilTop-1D5TOMF0'
+    return 'http://localhost:8080/api/similar?info=1&limit=1&q=Guardians%20Of%20The%20Galaxy%20Vol.%202&k=404369-AprilTop-1D5TOMF0'
     // return `${this.url}?k=${this.apiKey}`;
     // return `${this.url}?  &k=${this.apiKey}`;
   }
