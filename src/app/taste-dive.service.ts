@@ -8,7 +8,7 @@ export class TasteDiveService {
   apiKey = "404369-AprilTop-1D5TOMF0";
   url = "http://localhost:8080/api/similar";
   entertainmentResults: any[] = [];
-
+  // public entertainmentSearch: string = "";
   constructor(private http: HttpClient) { }
 
   getTaste() {
