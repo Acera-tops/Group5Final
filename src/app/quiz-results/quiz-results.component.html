@@ -4,7 +4,9 @@
 <!-- put into recipe list component -->
 <div *ngFor="let recipe of recipeAPI.recipes">
     <h3>{{recipe.recipe.label}}</h3>
-    <img [src]="recipe.recipe.image" />
+    <img [src]="recipe.recipe.image"/>
+   <!-- Edit this so opens in a new window -->
+    <a target = "_blank" href = "{{recipe.recipe.url}}">See Recipe</a>
 </div>
 
 <div *ngFor="let results of tasteApi.entertainmentResults">
@@ -17,6 +19,7 @@
 
         <!-- https://www.youtube.com/embed/{{results.yID}} -->
 
+        <p>{{results.wTeaser}}</p>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/0Vsy5KzsieQ"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
