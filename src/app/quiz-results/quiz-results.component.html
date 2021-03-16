@@ -10,6 +10,20 @@
 <div *ngFor="let results of tasteApi.entertainmentResults">
     <!-- response.Similar.Results -->
     <h3>{{results.Name}}</h3>
-    <!--<img [src]="recipe.recipe.image" />
-    -->
+    <!-- OG APRIL CODE BELOW -->
+    <!-- <video width="320" height="240" controls>
+        <source [src]= "results.yUrl" type="video/mp4"> 
+        {{results.yUrl}}</video> -->
+
+        <!-- https://www.youtube.com/embed/{{results.yID}} -->
+
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0Vsy5KzsieQ"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+    <!-- <iframe width="750" height="600" src="https://www.youtube.com/embed/{{results.yID}}"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+        {{results.yUrl}}</iframe> -->
 </div>
