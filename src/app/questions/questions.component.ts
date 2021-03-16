@@ -12,44 +12,108 @@ export class QuestionsComponent implements OnInit {
     public happy: boolean = false;
     public alive: boolean = false;
   public question2Answer: string = "";
-    public four: boolean = false;
-    public five: boolean = false;
-  // HC added the below -- can change variable names as needed
-  // IF WE CHANGE QUESTION 2 -- ALSO NEEDS TO BE UPDATED IN HTML
-  // public italy: boolean = false;
-  // public cancun: boolean = false;
-  // public question3Answer: string = "";
-  //   public adventure: boolean = false;
-  //   public romance: boolean = false;
-  // OR USE THIS FOR Q 3 -- variables need to be updated in HTML
-  //   public squareUp: boolean = false;
-  //   public goodLooking: boolean = false;
-  // public question4Answer: string = "";
-  //   public veggie: boolean = false;
-  //   public meat: boolean = false;
-  public foodSearch:string = "";
+    public italy: boolean = false;
+    public mexico: boolean = false;
+  public question3Answer: string = "";
+    public squareUp: boolean = false;
+    public goodLooking: boolean = false;
+  public question4Answer: string = "";
+    public veggie: boolean = false;
+    public meat: boolean = false;
+  public foodSearch: string = "";
+  public movieSearch: string = "";
 
   constructor(public recipeAPI: RecipesService, public tasteApi: TasteDiveService) { }
 
-  // toggleHappy(){
-  //   this.happy = !this.happy;
-  // }
-
-  // toggleAlive(){
-  //   this.alive = !this.alive;
-  // }
-
   getResults() {
     console.log(this.question1Answer);
-    if (this.question1Answer==="happy" && this.question2Answer==="four"){
-      this.foodSearch="cupcake"; 
+    //this is Rachel Matrix food 1
+    if (this.question1Answer==="happy" && this.question2Answer==="italy"
+    && this.question3Answer==="squareUp" && this.question4Answer==="veggie"){
+      this.foodSearch="vegetable lasagna";
+      this.movieSearch="Wonder Woman"; 
     } 
-    if (this.question1Answer==="alive"){
-      this.foodSearch="ghost pepper"; 
+    else if (this.question1Answer==="happy" && this.question2Answer==="italy"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="veggie"){
+      this.foodSearch="vegetable lasagna";
+      this.movieSearch="The Internship"; 
+    } 
+    else if (this.question1Answer==="alive" && this.question2Answer==="italy"
+    && this.question3Answer==="squareUp" && this.question4Answer==="veggie"){
+      this.foodSearch="vegetable lasagna";
+      this.movieSearch="Run All Night";
     }
+    else if (this.question1Answer==="alive" && this.question2Answer==="italy"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="veggie"){
+      this.foodSearch="vegetable lasagna";
+      this.movieSearch="John Wick";
+    }
+    //this is Rachel matrix food 2
+    else if (this.question1Answer==="happy" && this.question2Answer==="italy"
+    && this.question3Answer==="squareUp" && this.question4Answer==="meat"){
+          this.foodSearch="spaghetti & meatballs"; 
+          this.movieSearch="Wonder Woman";
+        } 
+    else if (this.question1Answer==="happy" && this.question2Answer==="italy"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="meat"){
+          this.foodSearch="spaghetti & meatballs"; 
+          this.movieSearch="The Internship";
+        }
+    else if (this.question1Answer==="alive" && this.question2Answer==="italy"
+    && this.question3Answer==="squareUp" && this.question4Answer==="meat"){
+          this.foodSearch="spaghetti & meatballs"; 
+          this.movieSearch="Run All Night";
+        } 
+    else if (this.question1Answer==="alive" && this.question2Answer==="italy"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="meat"){
+          this.foodSearch="spaghetti & meatballs"; 
+          this.movieSearch="John Wick";
+        } 
+    //this is Rachel matrix food 3
+    else if (this.question1Answer==="happy" && this.question2Answer==="mexico"
+    && this.question3Answer==="squareUp" && this.question4Answer==="veggie"){
+          this.foodSearch="sweet potato quesadilla"; 
+          this.movieSearch="Wonder Woman";
+        } 
+    else if (this.question1Answer==="happy" && this.question2Answer==="mexico"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="veggie"){
+          this.foodSearch="sweet potato quesadilla"; 
+          this.movieSearch="The Internship";
+        } 
+    else if (this.question1Answer==="alive" && this.question2Answer==="mexico"
+    && this.question3Answer==="squareUp" && this.question4Answer==="veggie"){
+          this.foodSearch="sweet potato quesadilla"; 
+          this.movieSearch="Run All Night";
+        } 
+    else if (this.question1Answer==="alive" && this.question2Answer==="mexico"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="veggie"){
+          this.foodSearch="sweet potato quesadilla"; 
+          this.movieSearch="John Wick";
+        }
+    //this is Rachel matrix food 4
+    else if (this.question1Answer==="happy" && this.question2Answer==="mexico"
+    && this.question3Answer==="squareUp" && this.question4Answer==="meat"){
+          this.foodSearch="steak tacos"; 
+          this.movieSearch="Wonder Woman";
+        }
+    else if (this.question1Answer==="happy" && this.question2Answer==="mexico"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="meat"){
+          this.foodSearch="steak tacos"; 
+          this.movieSearch="The Internship";
+        }
+    else if (this.question1Answer==="alive" && this.question2Answer==="mexico"
+    && this.question3Answer==="squareUp" && this.question4Answer==="meat"){
+          this.foodSearch="steak tacos"; 
+          this.movieSearch="Run All Night";
+        }
+    if (this.question1Answer==="alive" && this.question2Answer==="mexico"
+    && this.question3Answer==="goodLooking" && this.question4Answer==="meat"){
+          this.foodSearch="steak tacos"; 
+          this.movieSearch="John Wick";
+        }
+    
     this.recipeAPI.getRecipes(this.foodSearch);
-    // this.recipeAPI.getRecipes();
-    this.tasteApi.getTaste();
+    this.tasteApi.getTaste(this.movieSearch);
   }
 
     ngOnInit(): void {
@@ -57,37 +121,3 @@ export class QuestionsComponent implements OnInit {
     }
 
 }
-
-// HC ADDED FROM RACHELS EXCEL MAPPING
-// getResults() {
-//   console.log(this.question1Answer);
-//   // lets do food
-//   if (this.question2Answer==="italy" && this.question4Answer==="veggie"){
-//     this.foodSearch="veggie lasagna"; 
-//   } 
-//   if (this.question2Answer==="italy" && this.question4Answer==="meat){
-//     this.foodSearch="spaghetti & meatballs"; 
-//   } 
-//   if (this.question2Answer==="cancun" && this.question4Answer==="veggie"){
-//     this.foodSearch="sweet potato quesadilla"; 
-//   } 
-//   if (this.question2Answer==="cancun" && this.question4Answer==="meat"){
-//     this.foodSearch="steak tacos"; 
-//   } 
-//   // now lets do entertainment 
-//   if (this.question1Answer==="happy" && this.question3Answer==="squareUp"){
-//     this.entertainmentSearch="Wonder Woman"; 
-//   } 
-//   if (this.question1Answer==="happy" && this.question3Answer==="goodLooking"){
-//     this.entertainmentSearch="The Internship"; 
-//   } 
-//   if (this.question1Answer==="alive" && this.question3Answer==="squareUp"){
-//     this.entertainmentSearch="Run All Night"; 
-//   } 
-//   if (this.question1Answer==="alive" && this.question3Answer==="goodLooking"){
-//     this.entertainmentSearch="John Wick"; 
-//   } 
-//   this.recipeAPI.getRecipes(this.foodSearch);
-//   // this.recipeAPI.getRecipes();
-//   this.tasteApi.getTaste(this.entertainmentSearch);
-// }

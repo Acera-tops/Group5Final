@@ -3,10 +3,9 @@
 <form>
     <h3>How would you like to feel today?</h3>
     <div>
-        <label for="happy">
             <input [(ngModel)]="question1Answer" type="radio" name="question1" value="happy">
             <img src="https://i.pinimg.com/originals/ce/a1/cd/cea1cd4c9185badd83cd50dc5f6e1a31.png">
-        </label>
+            <label for="happy"></label>
     </div>
     <div>
         <input [(ngModel)]="question1Answer" type="radio" name="question1" value="alive">
@@ -15,32 +14,34 @@
     </div>
 
 
-    <h3>How many people will be participating?</h3>
+    <h3>Which vacation looks better?</h3>
     <div>
-        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="four">
-        <label for="four">up to four</label>
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="italy">
+        <img src="https://media.worldnomads.com/Explore/europe/5-things-italy.jpg">
+        <label for="italy"></label>
     </div>
     <div>
-        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="five">
-        <label for="five">five +</label>
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="mexico">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-535708103-1503506201.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=768:*">
+        <label for="mexico"></label>
     </div>
 
 
-<!--<h3>Which vacation looks the best right now?</h3>
+<h3>You walk into your house and a figure is unexpectedly standing inside. What do you do?</h3>
     <div>
-        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="adventure">
-        <img src="https://travel.home.sndimg.com/content/dam/images/travel/stock/2016/9/12/1/GettyImages-584615614-adventure-vacations-wingsuit-flying-canyon-jumping.jpg.rend.hgtvcom.966.725.suffix/1491594421027.jpeg">
-        <label for="adventure"></label>
+        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="squareUp">
+        <!-- <img src=" "> -->
+        <label for="squareUp"> Square up to fight!</label>
     </div>
     <div>
-        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="romance">
-        <img src="https://ssl.tzoo-img.com/images/tzoo.1.0.567887.C-vacation-Romantic-shutterstock-paris.jpg?width=1080">
-        <label for="romance"></label>
+        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="goodLooking">
+        <!-- <img src=" "> -->
+        <label for="goodLooking"> Depends, are they good looking?</label>
     </div>
     
     <h3>Which looks more delicious?</h3>
     <div>
-        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="veggies">
+        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="veggie">
         <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/27/0/EI1C03_Grilled-Vegetables_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382539859292.jpeg">
         <label for="veggie"></label>
     </div>
@@ -48,7 +49,7 @@
         <input [(ngModel)]="question4Answer" type="radio" name="question4" value="meat">
         <img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
         <label for="meat"></label>
-    </div> -->
+    </div>
     
     <button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
 
