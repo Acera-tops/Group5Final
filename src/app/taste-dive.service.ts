@@ -17,7 +17,6 @@ export class TasteDiveService {
 
     this.http.get(requestUrl).subscribe(
       (response: any) => {
-        console.log(response.Similar.Results);
         this.entertainmentResults = response.Similar.Results.map((result) => {
           result.yUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
             result.yUrl
