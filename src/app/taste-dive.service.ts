@@ -18,6 +18,10 @@ export class TasteDiveService {
     this.http.get(requestUrl).subscribe(
       (response: any) => {
         this.entertainmentResults = response.Similar.Results.map((result) => {
+          // Bypassing angular's security in order
+          // to display youtube links in an iFrame
+          // By default, angular blocks iFrames 
+          // across different domains
           result.yUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
             result.yUrl
           );
