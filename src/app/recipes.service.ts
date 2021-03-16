@@ -9,7 +9,7 @@ export class RecipesService {
   appId = "de013f42";
   url = "https://api.edamam.com/search";
   recipes: any[] = [];
-  // favorites: any[] = [];
+  favMeals: any[] = [];
   // public foodSearch: string = "";
   constructor(private http: HttpClient) { }
 
