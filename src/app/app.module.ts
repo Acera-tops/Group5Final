@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { QuestionsComponent } from './questions/questions.component';
 import { HomeComponent } from './home/home.component';
 import { QuizResultsComponent } from './quiz-results/quiz-results.component';
+import { FavsComponent } from './favs/favs.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { QuizResultsComponent } from './quiz-results/quiz-results.component';
     AppComponent,
     QuestionsComponent,
     HomeComponent,
-    QuizResultsComponent
+    QuizResultsComponent,
+    FavsComponent
   ],
   imports: [
     BrowserModule,

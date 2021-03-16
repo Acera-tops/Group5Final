@@ -9,6 +9,11 @@ image : string;
 url : string;
 }
 
+interface Movie {
+  //plug in things from the API here to define me
+  //put in information here
+  }
+
 @Component({
   selector: 'app-quiz-results',
   templateUrl: './quiz-results.component.html',
@@ -23,20 +28,21 @@ export class QuizResultsComponent implements OnInit {//functionality of componen
     
   }
 
-  favorite(recipe: Recipe) {
+  // new Fav function that needs to be fleshed out
+  // do we want two functions: one for movies & one for recipe
+
+  favoriteMovie(recipe: Recipe) {
     // console.log("the recipe is", recipe);
     this.recipeAPI.favMeals.push(recipe);
-    // console.log("the favorties are", this.recipeAPI.favorites);
+    // console.log("the favorties are", this.recipeAPI.favMeals);
   }
 
-
-  //need to create a Fav component
-  // when deleting a fav item use this function to cheat
-  // removeFavorite(recipe: number) {
-  //   // console.log("the recipe is", recipe);
-  //   this.recipeAPI.favorites.splice(recipe, 1);
-  //   // console.log("the favorties are", this.recipeAPI.favorites);
-  // }
+  // need to define the Movie Interface up @ top of page
+  favoriteMeal(movie: Movie) {
+    // console.log("the recipe is", recipe);
+    this.tasteApi.favMovies.push(movie);
+    // console.log("the favorties are", this.tasteApi.favMovies);
+  }
 
 
 
