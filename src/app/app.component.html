@@ -12,8 +12,13 @@
 <!-- This nav gives you links to click, which tells the router which route to use (defined in the routes constant in  AppRoutingModule) -->
 
 <!-- The routed views render in the <router-outlet>-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  
+  <nav class="navbar navbar-light navbar-expand-lg " style="background-color: #ec9378;">
     <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logoSS.png" width="30" height="30" alt="">
+      </a>
+
       <h1 class="display-1" href="#">Netflix and Grill</h1>
   
       <button
@@ -34,6 +39,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/Quiz">Take the Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/Favs">Favorites</a>
           </li>
           <!--<li class="nav-item">
             <a class="nav-link" routerLink="/Results">Quiz Results</a>

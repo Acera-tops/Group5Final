@@ -6,7 +6,11 @@
     <img [src]="recipe.recipe.image"/>
    <!-- Edit this so opens in a new window -->
     <a target = "_blank" href = "{{recipe.recipe.url}}">See Recipe</a>
+
+    <button (click)="addRecipeFavorites(recipe.recipe)">Add to Favorites</button>
 </div>
+
+
 
 <div *ngFor="let results of tasteApi.entertainmentResults">
     <!-- response.Similar.Results -->
@@ -15,7 +19,9 @@
         <p>{{results.wTeaser}}</p>
 
     <iframe width="750" height="600" [src]="results.yUrl" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <button (click)="addMovieFavorites(results)">Add to Favorites</button>
 </div>
 
-<button (click)="addFavorite()">Add to Favorites</button>
+<!-- <button (click)="addToFavorites(recipe.recipe)">Add to Favorites</button>  -->
 <!-- <button (click)="addFavorite(recipe.recipe)">Add to Favorites</button> -->

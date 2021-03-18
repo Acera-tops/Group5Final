@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 //DO WE WANT THESE ?
-// import { RecipesService } from '../recipes.service';
-// import {TasteDiveService} from '../taste-dive.service';
+import { RecipesService } from '../recipes.service';
+import {TasteDiveService} from '../taste-dive.service';
 
 @Component({
   selector: 'app-favs',
@@ -10,23 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public recipeAPI: RecipesService, public tasteApi: TasteDiveService) { }
 
   ngOnInit(): void {
   }
 
+  removeFavMeal(recipe: number) {
+    // console.log("the recipe is", recipe);
+    this.recipeAPI.favMeals.splice(recipe, 1);
+    // console.log("the favorties are", this.recipeAPI.favorites);
+  }
+
+  removeFavMovie(movie: number) {
+      console.log("the movie is", movie);
+      this.tasteApi.favMovies.splice(movie, 1);
+      // console.log("the favorties are", this.recipeAPI.favorites);
+    }
 }
 
-  // when deleting a fav item use this function as cheatsheet 
-
-  // removeFavMoive(recipe: number) {
-  //   // console.log("the recipe is", recipe);
-  //   this.recipeAPI.favorites.splice(recipe, 1);
-  //   // console.log("the favorties are", this.recipeAPI.favorites);
-  // }
-
-  // removeFavMeal(recipe: number) {
-  //   //   // console.log("the recipe is", recipe);
-  //   //   this.recipeAPI.favorites.splice(recipe, 1);
-  //   //   // console.log("the favorties are", this.recipeAPI.favorites);
-  //   // }
+ 

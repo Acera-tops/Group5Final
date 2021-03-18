@@ -1,1 +1,25 @@
-<p>favs works!</p>
+<h2>Favorites</h2>
+<div *ngIf="recipeAPI.favMeals.length">
+  <div *ngFor="let favorite of recipeAPI.favMeals; let i = index">
+    <h3>{{ favorite.label }}</h3>
+    <img [src]=" favorite.image "/>
+    <a target = "_blank" href = "{{favorite.url}}">See Recipe</a>
+    
+     <button (click)="removeFavMeal(i)">Remove</button>
+  </div>
+</div> 
+
+<div *ngIf="tasteApi.favMovies.length">
+    <div *ngFor="let favorite of tasteApi.favMovies; let i = index">
+      <h3>{{ favorite.Name }}</h3>
+      <p>{{favorite.wTeaser}}</p>
+      <iframe width="750" height="600" [src]="favorite.yUrl" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      
+       <button (click)="removeFavMovie(i)">Remove</button>
+    </div>
+  </div> 
+
+
+
+
+

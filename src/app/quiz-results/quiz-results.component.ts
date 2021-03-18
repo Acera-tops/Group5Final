@@ -3,16 +3,16 @@ import { RecipesService } from '../recipes.service';
 import {TasteDiveService} from '../taste-dive.service'
 
 interface Recipe {
-//plug in things from the API here to define me
 label : string;
 image : string;
 url : string;
 }
 
 interface Movie {
-  //plug in things from the API here to define me
-  //put in information here
-  }
+  Name: string;
+  wTeaser: string;
+  yUrl: string;
+}
 
 @Component({
   selector: 'app-quiz-results',
@@ -20,7 +20,8 @@ interface Movie {
   styleUrls: ['./quiz-results.component.css']
 })
 
-export class QuizResultsComponent implements OnInit {//functionality of component goes here
+export class QuizResultsComponent implements OnInit {
+  movie: Movie[];
 
   constructor(public recipeAPI: RecipesService, public tasteApi: TasteDiveService) { }
   
@@ -28,22 +29,34 @@ export class QuizResultsComponent implements OnInit {//functionality of componen
     
   }
 
-  // new Fav function that needs to be fleshed out
-  // do we want two functions: one for movies & one for recipe
-
-  favoriteMovie(recipe: Recipe) {
-    // console.log("the recipe is", recipe);
+  addRecipeFavorites(recipe: Recipe) {
     this.recipeAPI.favMeals.push(recipe);
-    // console.log("the favorties are", this.recipeAPI.favMeals);
-  }
-
-  // need to define the Movie Interface up @ top of page
-  favoriteMeal(movie: Movie) {
-    // console.log("the recipe is", recipe);
+    console.log(this.recipeAPI.favMeals);
+    // this.tasteApi.favMovies.push(movie);
+  };
+  
+  addMovieFavorites(movie: Movie) {
     this.tasteApi.favMovies.push(movie);
-    // console.log("the favorties are", this.tasteApi.favMovies);
+    console.log(this.tasteApi.favMovies);
+    // this.tasteApi.favMovies.push(movie);
   }
+  // favoriteMeal(recipe: Recipe) {
+  //   // console.log("the recipe is", recipe);
+  //   this.recipeAPI.favMeals.push(recipe);
+  //   // console.log("the favorties are", this.recipeAPI.favMeals);
+  // }
 
-
-
+  // // need to define the Movie Interface up @ top of page
+  // favoriteMovie(movie: Movie) {
+  //   // console.log("the recipe is", recipe);
+  //   this.tasteApi.favMovies.push(movie);
+  //   // console.log("the favorties are", this.tasteApi.favMovies);
+  // }
 }
+
+// addFavorite = function (favorites: Favorites): void {
+//   this.RecipeAPI.favorites.push({
+//     label: favorites.label,
+//     image: favorites.image,
+//     url: favorites.url,
+//   });
