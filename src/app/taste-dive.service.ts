@@ -8,7 +8,7 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class TasteDiveService {
   apiKey = '404369-AprilTop-1D5TOMF0';
   //proxy server to get around cors errors
-  url = 'http://localhost:8080/api/similar';
+  url = 'https://netflix-and-grill.herokuapp.com/api/similar';
   entertainmentResults: any[] = [];
   favMovies: any[] = [];
   // public movieSearch: string = "";
