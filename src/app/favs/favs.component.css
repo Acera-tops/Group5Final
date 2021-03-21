@@ -1,0 +1,23 @@
+.favDelete {
+    display: flex;
+}
+
+.favs {
+    margin: 30px;
+}
+
+h2 {
+    margin: 30px;
+}
+
+button {
+    margin-left: 30px;
+}
+
+#link {
+    margin-bottom: 30px;
+}
+
+.favItems {
+    margin-bottom: 30px;
+}
