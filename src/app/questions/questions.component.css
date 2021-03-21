@@ -1,3 +1,26 @@
 img {
     width: 300px;
-}
+    padding: 10px;
+    }
+    .Questions {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    } 
+    .images {
+    display: flex;
+    align-content: center;
+    } 
+    body {
+    margin: auto;
+    justify-content: center;
+    }
+    h3{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    }
+    .radio {
+    margin-top: 90px;
+    }
+    

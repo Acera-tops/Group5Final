@@ -1,56 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
 <h2>Let's find your perfect night in!</h2>
-
 <form>
-    <h3>How would you like to feel today?</h3>
-    <div>
-            <input [(ngModel)]="question1Answer" type="radio" name="question1" value="happy">
-            <img src="https://www.happierhuman.com/wp-content/uploads/2019/07/make-someone-happy.jpg">
-            <label for="happy"></label>
-    </div>
-    <div>
-        <input [(ngModel)]="question1Answer" type="radio" name="question1" value="alive">
-        <img src="https://www.skydivetecumseh.com/wp-content/uploads/2016/09/Skydive-Tecumseh-Michigan-2000x1200.jpg">
-        <label for="alive"></label>
-    </div>
+<h3 class="Questions">How would you like to feel today?</h3>
+<div class="images">
+<input class="radio" [(ngModel)]="question1Answer" type="radio" name="question1" value="happy">
+<img src="https://www.happierhuman.com/wp-content/uploads/2019/07/make-someone-happy.jpg">
+<label for="happy"></label>
+</div>
+<div class="images">
+<input class="radio" [(ngModel)]="question1Answer" type="radio" name="question1" value="alive">
+<img src="https://www.skydivetecumseh.com/wp-content/uploads/2016/09/Skydive-Tecumseh-Michigan-2000x1200.jpg">
+<label for="alive"></label>
+</div>
 
+<h3 class="Questions">Which vacation looks better?</h3>
+<div class="images">
+<input class="radio" [(ngModel)]="question2Answer" type="radio" name="question2" value="italy">
+<img src="https://media.worldnomads.com/Explore/europe/5-things-italy.jpg">
+<label for="italy"></label>
+</div>
+<div class="images">
+<input class="radio" [(ngModel)]="question2Answer" type="radio" name="question2" value="mexico">
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-535708103-1503506201.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=768:*">
+<label for="mexico"></label>
+</div>
 
-    <h3>Which vacation looks better?</h3>
-    <div>
-        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="italy">
-        <img src="https://media.worldnomads.com/Explore/europe/5-things-italy.jpg">
-        <label for="italy"></label>
-    </div>
-    <div>
-        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="mexico">
-        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-535708103-1503506201.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=768:*">
-        <label for="mexico"></label>
-    </div>
-
-
-<h3>You walk into your house and a figure is unexpectedly standing inside. What do you do?</h3>
-    <div>
-        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="squareUp">
-        <!-- <img src=" "> -->
-        <label for="squareUp"> Square up to fight!</label>
-    </div>
-    <div>
-        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="goodLooking">
-        <!-- <img src=" "> -->
-        <label for="goodLooking"> Depends, are they good looking?</label>
-    </div>
-    
-    <h3>Which looks more delicious?</h3>
-    <div>
-        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="veggie">
-        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/27/0/EI1C03_Grilled-Vegetables_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382539859292.jpeg">
-        <label for="veggie"></label>
-    </div>
-    <div>
-        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="meat">
-        <img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
-        <label for="meat"></label>
-    </div>
-    
-    <button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
-
+<h3 class="Questions">You walk into your house and a figure is unexpectedly standing inside. What do you do?</h3>
+<div class="images">
+<input class="radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="squareUp">
+<!-- <img src=" "> -->
+<label for="squareUp"> Square up to fight!</label>
+</div>
+<div class="images">
+<input class="radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="goodLooking">
+<!-- <img src=" "> -->
+<label for="goodLooking"> Depends, are they good looking?</label>
+</div>
+<h3 class="Questions">Which looks more delicious?</h3>
+<div class="images">
+<input class="radio" [(ngModel)]="question4Answer" type="radio" name="question4" value="veggie">
+<img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/27/0/EI1C03_Grilled-Vegetables_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382539859292.jpeg">
+<label for="veggie"></label>
+</div>
+<div class="images">
+<input class="radio" [(ngModel)]="question4Answer" type="radio" name="question4" value="meat">
+<img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
+<label for="meat"></label>
+</div>
+<button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
 </form>
+</body>
+</html>
