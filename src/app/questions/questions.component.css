@@ -1,6 +1,37 @@
+@media screen and (min-width: 400px) {
+    body {
+      background-color: lightgreen;
+    }
+
+    .Questions {
+    text-align: center;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: lavender;
+    }
+  }
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    }
+    .radio {
+    margin-top: 90px;
+    }
+
 img {
     width: 300px;
     padding: 10px;
+    display: flex;
+    align-content: center;
     }
     .Questions {
     display: flex;
@@ -9,18 +40,11 @@ img {
     } 
     .images {
     display: flex;
-    align-content: center;
+    justify-content: center;
     } 
-    body {
-    margin: auto;
-    justify-content: center;
-    }
-    h3{
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    }
-    .radio {
-    margin-top: 90px;
-    }
+    
+
+    
+
+    
     
