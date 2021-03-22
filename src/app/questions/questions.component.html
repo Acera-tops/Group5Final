@@ -7,7 +7,7 @@
 <title>Document</title>
 </head>
 <body>
-<h2>Let's find your perfect night in!</h2>
+
 <form>
 <h3 class="Questions">How would you like to feel today?</h3>
 <div class="images">
@@ -29,21 +29,22 @@
 </div>
 <div class="images">
 <input class="radio" [(ngModel)]="question2Answer" type="radio" name="question2" value="mexico">
-<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-535708103-1503506201.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=768:*">
+<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-535708103-1503506201.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=768:*" >
 <label for="mexico"></label>
 </div>
 
 <h3 class="Questions">You walk into your house and a figure is unexpectedly standing inside. What do you do?</h3>
-<div class="images">
-<input class="radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="squareUp">
+<div class="no-image">
+<input class="no-image-radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="squareUp">
 <!-- <img src=" "> -->
 <label for="squareUp"> Square up to fight!</label>
 </div>
-<div class="images">
-<input class="radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="goodLooking">
+<div class="no-image">
+<input class="no-image-radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="goodLooking">
 <!-- <img src=" "> -->
 <label for="goodLooking"> Depends, are they good looking?</label>
 </div>
+
 <h3 class="Questions">Which looks more delicious?</h3>
 <div class="images">
 <input class="radio" [(ngModel)]="question4Answer" type="radio" name="question4" value="veggie">
@@ -55,7 +56,9 @@
 <img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
 <label for="meat"></label>
 </div>
+<div id="quiz-results-button">
 <button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
+</div>
 </form>
 </body>
 </html>

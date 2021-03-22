@@ -1,18 +1,4 @@
-@media screen and (min-width: 400px) {
-    body {
-      background-color: lightgreen;
-    }
 
-    .Questions {
-    text-align: center;
-    }
-  }
-  
-  @media screen and (min-width: 800px) {
-    body {
-      background-color: lavender;
-    }
-  }
 
 h2 {
     text-align: center;
@@ -30,19 +16,44 @@ h3 {
 img {
     width: 300px;
     padding: 10px;
-    display: flex;
-    align-content: center;
-    }
+    
+   
+}
     .Questions {
     display: flex;
     flex-direction: column;
     align-content: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: capitolium-2,serif;
+font-weight: 400;
+font-style: normal;
     } 
     .images {
     display: flex;
     justify-content: center;
     } 
+
+    .no-image {
+        text-align: center;
+       line-height: 50px;
+       font-family: capitolium-2,serif;
+font-weight: 400;
+font-style: normal;
+        
+    }
+
+    .no-image-radio {
+        width: 25px;
+    }
     
+    #quiz-results-button{
+        text-align: center;
+        font-family: sutro,serif;
+font-weight: 300;
+font-style: normal; 
+text-decoration: none;
+    }
 
     
 
