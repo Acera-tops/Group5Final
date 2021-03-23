@@ -11,6 +11,7 @@ text-decoration: none;
 #pitmaster{
     text-align: center;
     padding-top: 10px;
+    margin: 50px;
     font-family: sutro,serif;
     font-weight: 300;
     font-style: normal; 
@@ -22,18 +23,77 @@ text-decoration: none;
     justify-content: space-around;
     text-align: center;
     padding-top: 10px;
+    padding: 50px;
+    margin: 50px;
     font-family: sutro,serif;
     font-weight: 300;
     font-style: normal; 
     text-decoration: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
 }
 
 img{
     border-radius: 50%;
     width:150px;
     height:150px;
+    margin: 40px;
+    margin-top: 10px;
 }
 
 .picks{
-    display:none;
+    text-align:center;
 }
+
+
+
+@media screen and (max-width: 600px) {
+    #home-button{
+        text-align: center;
+        padding-top: 10px;
+        margin: 50px;
+        font-family: sutro,serif;
+        font-weight: 300;
+        font-style: normal; 
+        text-decoration: none;
+    }
+
+    #pitmaster{
+        text-align: center;
+        padding: 50px;
+        margin: 50px;
+        font-family: sutro,serif;
+        font-weight: 300;
+        font-style: normal; 
+        text-decoration: none;
+    }
+
+    .pitmaster{
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        padding: 50px;
+        margin: 50px;
+        font-family: sutro,serif;
+        font-weight: 300;
+        font-style: normal; 
+        text-decoration: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:center;
+    }
+
+    img{
+        border-radius: 50%;
+        width:150px;
+        height:150px;
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+
+    .picks{
+        text-align:center;
+    }
+}
+

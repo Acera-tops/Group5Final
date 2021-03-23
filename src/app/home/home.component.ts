@@ -1,4 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { RecipesService } from '../recipes.service';
+import {TasteDiveService} from '../taste-dive.service'
+
+interface Recipe {
+label : string;
+image : string;
+url : string;
+}
+
+interface Movie {
+  Name: string;
+  wTeaser: string;
+  yUrl: string;
+}
 
 @Component({
   selector: 'app-home',
@@ -6,10 +20,48 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+ Hannah: boolean = false;
+ Rachel: boolean = false;
+ Cherina: boolean = false;
+ April: boolean = false;
+ public foodSearch: string = "";
+ public movieSearch: string = "";
 
-  constructor() { }
+ constructor(public recipeAPI: RecipesService, public tasteApi: TasteDiveService) { }
+
+  toggleApril=():void=>{
+    this.April = !this.April;
+  }
+
+  toggleHannah=():void=>{
+    this.Hannah = !this.Hannah;
+  }
+
+  toggleCherina=():void=>{
+    this.Cherina = !this.Cherina;
+  }
+
+  toggleRachel=():void=>{
+    this.Rachel = !this.Rachel;
+    this.foodSearch="ratatouille";
+    this.movieSearch="Shrek";
+    this.recipeAPI.getRecipes(this.foodSearch);
+    this.tasteApi.getTaste(this.movieSearch); 
+  }
+
+  addRecipeFavorites(recipe: Recipe) {
+    this.recipeAPI.favMeals.push(recipe);
+    console.log(this.recipeAPI.favMeals);
+    // this.tasteApi.favMovies.push(movie);
+  };
+  
+  addMovieFavorites(movie: Movie) {
+    this.tasteApi.favMovies.push(movie);
+    console.log(this.tasteApi.favMovies);
+    // this.tasteApi.favMovies.push(movie);
+  }
 
   ngOnInit(): void {
-  }
+  };
 
 }
