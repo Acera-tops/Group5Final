@@ -1,3 +1,13 @@
+
+  
+#header-image-menu img{
+    width: 100%;
+    margin: none;
+    padding: none;
+    border-radius: 0%;
+    height: 10%;
+}
+
 #home-button{
     text-align: center;
     padding-top: 10px;
@@ -6,6 +16,7 @@
     font-weight: 300;
     font-style: normal; 
     text-decoration: none;
+
 }
 
 #pitmaster{
