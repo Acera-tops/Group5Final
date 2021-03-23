@@ -3,15 +3,15 @@
     padding-top: 10px;
     margin: 50px;
     font-family: sutro,serif;
-font-weight: 300;
-font-style: normal; 
-text-decoration: none;
+    font-weight: 300;
+    font-style: normal; 
+    text-decoration: none;
 }
 
 #pitmaster{
     text-align: center;
     padding-top: 10px;
-    margin: 50px;
+    margin: 30px;
     font-family: sutro,serif;
     font-weight: 300;
     font-style: normal; 
@@ -23,7 +23,6 @@ text-decoration: none;
     justify-content: space-around;
     text-align: center;
     padding-top: 10px;
-    padding: 50px;
     margin: 50px;
     font-family: sutro,serif;
     font-weight: 300;
@@ -35,6 +34,7 @@ text-decoration: none;
 }
 
 .pitmaster img{
+    border:5px solid #ec9378;
     border-radius: 50%;
     width:150px;
     height:150px;
@@ -43,6 +43,7 @@ text-decoration: none;
 }
 
 .picks{
+    font-family: sutro,serif;
     text-align:center;
 }
 
@@ -61,6 +62,9 @@ button{
 
 iframe{
     border-radius: 8%;
+}
+h4{
+    margin-top: 50px;
 }
 
 
@@ -91,7 +95,6 @@ iframe{
         display: flex;
         justify-content: space-around;
         text-align: center;
-        padding: 50px;
         margin: 50px;
         font-family: sutro,serif;
         font-weight: 300;
@@ -103,6 +106,7 @@ iframe{
     }
 
     .pitmaster img{
+        border:5px solid #ec9378;
         border-radius: 50%;
         width:150px;
         height:150px;
@@ -111,6 +115,7 @@ iframe{
     }
 
     .picks{
+        font-family: sutro,serif;
         text-align:center;
     }
 
@@ -124,6 +129,10 @@ iframe{
 
     iframe{
         border-radius: 8%;
+    }
+
+    h4{
+        margin-bottom: 20px;
     }
 
 }
