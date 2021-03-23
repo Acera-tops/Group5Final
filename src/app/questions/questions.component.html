@@ -1,64 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-</head>
-<body>
+<h2>Let's find your perfect night in!</h2>
 
 <form>
-<h3 class="Questions">How would you like to feel today?</h3>
-<div class="images">
-<input class="radio" [(ngModel)]="question1Answer" type="radio" name="question1" value="happy">
-<img src="https://www.happierhuman.com/wp-content/uploads/2019/07/make-someone-happy.jpg">
-<label for="happy"></label>
-</div>
-<div class="images">
-<input class="radio" [(ngModel)]="question1Answer" type="radio" name="question1" value="alive">
-<img src="https://www.skydivetecumseh.com/wp-content/uploads/2016/09/Skydive-Tecumseh-Michigan-2000x1200.jpg">
-<label for="alive"></label>
-</div>
+    <h3>How would you like to feel today?</h3>
+    <div>
+            <input [(ngModel)]="question1Answer" type="radio" name="question1" value="happy">
+            <img src="https://www.happierhuman.com/wp-content/uploads/2019/07/make-someone-happy.jpg">
+            <label for="happy"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question1Answer" type="radio" name="question1" value="alive">
+        <img src="https://www.skydivetecumseh.com/wp-content/uploads/2016/09/Skydive-Tecumseh-Michigan-2000x1200.jpg">
+        <label for="alive"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question1Answer" type="radio" name="question1" value="inspired">
+        <img src="https://www.uschamber.com/co/uploads/images/_w622h415/inspiration.jpg">
+        <label for="inspired"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question1Answer" type="radio" name="question1" value="surprised">
+        <img src="https://toxicfreefuture.org/wp-content/uploads/2012/02/surprised-kid-800-x-455.jpg">
+        <label for="surprised"></label>
+    </div>
 
-<h3 class="Questions">Which vacation looks better?</h3>
-<div class="images">
-<input class="radio" [(ngModel)]="question2Answer" type="radio" name="question2" value="italy">
-<img src="https://media.worldnomads.com/Explore/europe/5-things-italy.jpg">
-<label for="italy"></label>
-</div>
-<div class="images">
-<input class="radio" [(ngModel)]="question2Answer" type="radio" name="question2" value="mexico">
-<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-535708103-1503506201.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=768:*" >
-<label for="mexico"></label>
-</div>
 
-<h3 class="Questions">You walk into your house and a figure is unexpectedly standing inside. What do you do?</h3>
-<div class="no-image">
-<input class="no-image-radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="squareUp">
-<!-- <img src=" "> -->
-<label for="squareUp"> Square up to fight!</label>
-</div>
-<div class="no-image">
-<input class="no-image-radio" [(ngModel)]="question3Answer" type="radio" name="question3" value="goodLooking">
-<!-- <img src=" "> -->
-<label for="goodLooking"> Depends, are they good looking?</label>
-</div>
+    <h3>Which vacation looks better?</h3>
+    <div>
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="italy">
+        <img src="https://media.worldnomads.com/Explore/europe/5-things-italy.jpg">
+        <label for="italy"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="mexico">
+        <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-535708103-1503506201.jpg?crop=1.00xw:0.892xh;0,0.108xh&resize=768:*">
+        <label for="mexico"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="japan">
+        <img src="https://img.delicious.com.au/Z60pNZAr/w759-h506-cfill/del/2019/06/tokyo-110027-1.jpg">
+        <label for="japan"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question2Answer" type="radio" name="question2" value="morocco">
+        <img src="https://www.theblondeabroad.com/wp-content/uploads/2017/09/chefchaouen-blue-city-morocco-1.jpg">
+        <label for="morocco"></label>
+    </div>
 
-<h3 class="Questions">Which looks more delicious?</h3>
-<div class="images">
-<input class="radio" [(ngModel)]="question4Answer" type="radio" name="question4" value="veggie">
-<img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/27/0/EI1C03_Grilled-Vegetables_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382539859292.jpeg">
-<label for="veggie"></label>
-</div>
-<div class="images">
-<input class="radio" [(ngModel)]="question4Answer" type="radio" name="question4" value="meat">
-<img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
-<label for="meat"></label>
-</div>
-<div id="quiz-results-button">
-<button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
-</div>
+
+<h3>You walk into your house and a figure is unexpectedly standing inside. What do you do?</h3>
+    <div>
+        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="squareUp">
+        <!-- <img src=" "> -->
+        <label for="squareUp"> Square up to fight!</label>
+    </div>
+    <div>
+        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="goodLooking">
+        <!-- <img src=" "> -->
+        <label for="goodLooking"> Depends, are they good looking?</label>
+    </div>
+    <div>
+        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="run">
+        <!-- <img src=" "> -->
+        <label for="run"> Get me outta here - Run!</label>
+    </div>
+    <div>
+        <input [(ngModel)]="question3Answer" type="radio" name="question3" value="lights">
+        <!-- <img src=" "> -->
+        <label for="lights"> Turn on the lights</label>
+    </div>
+    
+    <h3>Which looks more delicious?</h3>
+    <div>
+        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="veggie">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/5/27/0/EI1C03_Grilled-Vegetables_s4x3.jpg.rend.hgtvcom.826.620.suffix/1382539859292.jpeg">
+        <label for="veggie"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="meat">
+        <img src="https://assets.epicurious.com/photos/56f5916916f9f5a007cc1bb0/master/pass/Around-the-Fire_Grilled-Beef-Skirt-Steak.jpg">
+        <label for="meat"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="pasta">
+        <img src="https://images.food52.com/2Ab_5IjpkZowGe6zIxi6tO6kgAI=/1320x880/a5a735bb-4389-4739-b286-180be60ac251--2015-0106_pasta-with-garlic-parmesan-breadcrumbs-331.jpg">
+        <label for="pasta"></label>
+    </div>
+    <div>
+        <input [(ngModel)]="question4Answer" type="radio" name="question4" value="salad">
+        <img src="https://images.food52.com/A1mZkTcSUAkV9LlvaRJaZZhzH2A=/1930x1286/ee17f379-1025-466c-a4da-59ce7b362130--2014-0311_CP_caesar-style-kale-salad-011.jpg">
+        <label for="salad"></label>
+    </div>
+    
+    <button type="button" (click)="getResults()" routerLink="/Results">Submit</button>
+
 </form>
-</body>
-</html>
