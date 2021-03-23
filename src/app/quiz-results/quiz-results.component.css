@@ -24,3 +24,11 @@ button {
 #link {
     margin-bottom: 30px;
 }
+
+img{
+    border-radius: 8%;
+}
+
+iframe{
+    border-radius: 8%;
+}

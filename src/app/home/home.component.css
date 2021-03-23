@@ -34,7 +34,7 @@ text-decoration: none;
     align-items:center;
 }
 
-img{
+.pitmaster img{
     border-radius: 50%;
     width:150px;
     height:150px;
@@ -45,6 +45,25 @@ img{
 .picks{
     text-align:center;
 }
+
+#recipePick{
+    margin-bottom: 50px;
+}
+
+img{
+    margin: 20px;
+    border-radius: 8%;
+}
+
+button{
+    margin: 20px;
+}
+
+iframe{
+    border-radius: 8%;
+}
+
+
 
 
 
@@ -84,7 +103,7 @@ img{
         align-items:center;
     }
 
-    img{
+    .pitmaster img{
         border-radius: 50%;
         width:150px;
         height:150px;
@@ -95,5 +114,18 @@ img{
     .picks{
         text-align:center;
     }
+
+    img{
+        margin: 20px;
+    }
+    
+    button{
+        margin: 20px;
+    }
+    
+    iframe{
+        border-radius: 8%;
+    }
+
 }
 
