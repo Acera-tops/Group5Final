@@ -70,8 +70,8 @@
 
 <div *ngIf="Hannah" class="picks" id="Hannah">
     <h3>Hannah's Pick</h3>
-    <p>Blurb</p>
-    <!-- Recipe:  -->
+    <p>Why risk it for the bisket when you can risk it for this brisket? Turn on those ovens troop!</p>
+    <!-- Recipe: Brisket - the kind that's cooked, not BBQ -->
     <div id="recipePick" *ngFor="let recipe of recipeAPI.recipes">
         <div>
             <h4>{{recipe.recipe.label}}</h4>
@@ -89,7 +89,7 @@
         </div>
     </div>
 
-    <!-- Movie:  -->
+    <!-- Movie: Troop Bevery Hills -->
     <div id="moviePick" *ngFor="let results of tasteApi.entertainmentResults">
         <div>
             <h4>{{results.Name}}</h4>
