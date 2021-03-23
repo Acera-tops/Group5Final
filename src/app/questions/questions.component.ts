@@ -703,7 +703,7 @@ else if (this.question1Answer==="surprised" && this.question2Answer==="morocco"
    this.foodSearch="Bakoula Salad";
    this.movieSearch="The Shining";
  }
-else (this.question1Answer==="surprised" && this.question2Answer==="morocco"
+if (this.question1Answer==="surprised" && this.question2Answer==="morocco"
  && this.question3Answer==="lights" && this.question4Answer==="salad"){
    this.foodSearch="Bakoula Salad";
    this.movieSearch="Parasite";
