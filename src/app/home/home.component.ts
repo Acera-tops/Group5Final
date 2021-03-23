@@ -31,6 +31,10 @@ export class HomeComponent implements OnInit {
 
   toggleApril=():void=>{
     this.April = !this.April;
+    this.foodSearch="Sunday Brunch: Eggs In A Basket";
+    this.movieSearch="The Sixth Sense";
+    this.recipeAPI.getRecipes(this.foodSearch);
+    this.tasteApi.getTaste(this.movieSearch);
   }
 
   toggleHannah=():void=>{
@@ -39,6 +43,10 @@ export class HomeComponent implements OnInit {
 
   toggleCherina=():void=>{
     this.Cherina = !this.Cherina;
+    this.foodSearch="salmon pasta";
+    this.movieSearch="Enough";
+    this.recipeAPI.getRecipes(this.foodSearch);
+    this.tasteApi.getTaste(this.movieSearch); 
   }
 
   toggleRachel=():void=>{

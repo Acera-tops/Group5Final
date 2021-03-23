@@ -66,7 +66,6 @@ iframe{
 
 
 
-
 @media screen and (max-width: 600px) {
     #home-button{
         text-align: center;
@@ -122,7 +121,7 @@ iframe{
     button{
         margin: 20px;
     }
-    
+
     iframe{
         border-radius: 8%;
     }
