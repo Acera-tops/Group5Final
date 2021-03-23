@@ -36,8 +36,8 @@
     overflow: hidden;
     white-space: pre; 
     font-family: sutro,serif;
-font-weight: 900;
-font-style: normal;
+    font-weight: 900;
+    font-style: normal;
   }
 
   p {
@@ -60,11 +60,12 @@ button {
 .container-header {
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .display-1 {
-  padding-left: 455px;
-  justify-content: center;
+  /* padding-left: 455px; */
+  /* justify-content: center; */
 }
 
 .container-header-child {
@@ -72,5 +73,5 @@ button {
   justify-content: center;
   font-weight: 100;
   font-size: 30px;
-  padding-left: 380px;
+  /* padding-left: 380px; */
 }

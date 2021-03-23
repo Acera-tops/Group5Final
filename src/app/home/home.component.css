@@ -1,8 +1,39 @@
 #home-button{
     text-align: center;
     padding-top: 10px;
+    margin: 50px;
     font-family: sutro,serif;
 font-weight: 300;
 font-style: normal; 
 text-decoration: none;
+}
+
+#pitmaster{
+    text-align: center;
+    padding-top: 10px;
+    font-family: sutro,serif;
+    font-weight: 300;
+    font-style: normal; 
+    text-decoration: none;
+}
+
+.pitmaster{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 10px;
+    font-family: sutro,serif;
+    font-weight: 300;
+    font-style: normal; 
+    text-decoration: none;
+}
+
+img{
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+}
+
+.picks{
+    display:none;
 }
