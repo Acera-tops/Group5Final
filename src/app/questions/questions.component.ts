@@ -179,9 +179,6 @@ export class QuestionsComponent implements OnInit {
       this.movieSearch="Moonlight";
     }
     else if (this.question1Answer==="surprised" && this.question2Answer==="italy"
-<<<<<<< HEAD
-    && this.question3Answer==="run" && this.question4Answer==="meat"){
-=======
     && this.question3Answer==="squareUp" && this.question4Answer==="meat"){
           this.foodSearch="spaghetti & meatballs"; 
           this.movieSearch="Black Panther";
@@ -193,7 +190,6 @@ export class QuestionsComponent implements OnInit {
     }
     else if (this.question1Answer==="surprised" && this.question2Answer==="italy"
     && this.question3Answer==="run" && this.question4Answer==="veggie"){
->>>>>>> hannah
       this.foodSearch="spaghetti & meatballs";
       this.movieSearch="The Shining";
     }
