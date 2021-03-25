@@ -5,8 +5,7 @@ h2 {
 
 h3 {
     font-size: 30px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin: 50px 50px 20px 50px;
     }
 

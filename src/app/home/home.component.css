@@ -1,4 +1,7 @@
-  
+p{
+    margin: 30px;
+}  
+
 #header-image-menu img{
     width: 100%;
     margin: none;

@@ -2,11 +2,26 @@
    font-family: sutro,serif;
  }
 
+ .container-header {
+  display: flex;
+  flex-direction: column; 
+}
+
+/* h1 {
+  display: flex;
+  justify-content: center;
+  font-family: sutro, serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+/* mobile version */
  @media screen and (max-width: 600px) {
 
     .container-header {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
+        flex-wrap: wrap; 
   }
 
   .display-1 {
@@ -14,24 +29,74 @@
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
+    font-weight: 600;
     white-space: pre; 
   }
 
   p {
-    font-size: 40px;
+    font-size: 20px;
     width: 100%;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: pre;
+    font-family: sutro,serif;
+    font-style: italic;
     
   }
+
+  /* .container-header-child {
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    font-size: 30px;
+    /* padding-left: 380px;
+  }*/
 }
 
+/* tablet version */
+@media screen and (min-width: 601px) {
+
+  .container-header {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; 
+}
+
+.display-1 {
+  font-size: 40px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 600;
+  white-space: pre; 
+}
+
+p {
+  font-size: 20px;
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre;
+  font-family: sutro,serif;
+  font-style: italic;
+  
+}
+
+/* .container-header-child {
+  display: flex;
+  justify-content: center;
+  font-weight: 100;
+  font-size: 30px;
+  /* padding-left: 380px;
+}*/
+}
+
+
+/* desktop version */
 @media screen and (min-width: 800px) {
   .container-header {
     display: flex;
     flex-direction: column; 
-    
   }
 
   .display-1 {
@@ -52,8 +117,8 @@
     overflow: hidden;
     white-space: pre;
     font-family: sutro,serif;
-/* font-weight: 100; */
-font-style: italic;
+  /* font-weight: 100; */
+    font-style: italic;
     
   }
 }
