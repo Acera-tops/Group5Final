@@ -4,10 +4,15 @@
 
 .favs {
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h2 {
     margin: 30px;
+    text-align: center;
 }
 
 button {
@@ -19,7 +24,12 @@ button {
 }
 
 .favItems {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 img{
@@ -28,4 +38,8 @@ img{
 
 iframe{
     border-radius: 8%;
+}
+
+p{
+    text-align: center;
 }
