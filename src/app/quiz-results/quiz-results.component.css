@@ -7,10 +7,15 @@
 
 .quizResults {
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .addFavorite {
     display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -36,3 +41,16 @@ iframe{
 p{
     width: 80%;
 }
+
+body {
+    text-align: center;
+}
+
+.recipe-label{
+    text-align: center;
+}
+
+.resultsDisplay{
+    text-align: center;
+}
+
