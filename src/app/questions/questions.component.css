@@ -1,58 +1,102 @@
-
-
 h2 {
     text-align: center;
+    margin: 50px;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
-    }
-    .radio {
-    margin-top: 90px;
+    margin: 50px 50px 20px 50px;
     }
 
-img {
-    width: 300px;
-    padding: 10px;
-    border-radius: 8%;   
+.radio {
+    margin-top: 90px;
+} 
+
+label{
+    margin-left: 20px;
+    font-size: 20px;
 }
-    .Questions {
+
+img {
+    width: 500px;
+    padding: 10px;
+    border-radius: 8%; 
+}
+
+.option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* input {
+    display: flex;
+    justify-content: center; 
+} */
+
+/* .images {
+    display: flex;
+    justify-content: center;  
+    } 
+
+.no-image {
+    text-align: center;
+    line-height: 50px;
+    font-family: capitolium-2,serif;
+    font-weight: 400;
+    font-style: normal;
+    }  */
+
+
+.Questions {
     display: flex;
     flex-direction: column;
     align-content: center;
     text-align: center;
     margin-top: 10px;
     font-family: capitolium-2,serif;
-font-weight: 400;
-font-style: normal;
-    } 
-    .images {
-    display: flex;
-    justify-content: center;
-    } 
+    font-weight: 400;
+    font-style: normal;
+} 
 
-    .no-image {
-        text-align: center;
-       line-height: 50px;
-       font-family: capitolium-2,serif;
-font-weight: 400;
-font-style: normal;
-        
-    }
 
-    .no-image-radio {
-        width: 25px;
-    }
+ .no-image-radio {
+    width: 25px;
+ }
     
-    #quiz-results-button{
-        text-align: center;
-        font-family: sutro,serif;
-font-weight: 300;
-font-style: normal; 
-text-decoration: none;
+#quiz-results-button{
+    text-align: center;
+    font-family: sutro,serif;
+    font-weight: 300;
+    font-style: normal; 
+    text-decoration: none;
+    padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    img {
+        width: 300px;
+        padding: 10px;
+        border-radius: 8%;   
+        /* display: flex;
+        justify-content: center;   */
     }
+
+    h3 {
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+        }
+    
+        h2 {
+            text-align: center;
+            margin: 30px;
+        }
+
+}
 
     
 

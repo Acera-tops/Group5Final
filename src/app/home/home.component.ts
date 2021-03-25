@@ -39,6 +39,10 @@ export class HomeComponent implements OnInit {
 
   toggleHannah=():void=>{
     this.Hannah = !this.Hannah;
+    this.foodSearch="brisket";
+    this.movieSearch="True Beverly Hills";
+    this.recipeAPI.getRecipes(this.foodSearch);
+    this.tasteApi.getTaste(this.movieSearch); 
   }
 
   toggleCherina=():void=>{

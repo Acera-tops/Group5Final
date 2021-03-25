@@ -1,4 +1,9 @@
-  @media screen and (max-width: 600px) {
+ body{
+   font-family: sutro,serif;
+ }
+
+ @media screen and (max-width: 600px) {
+
     .container-header {
         display: flex;
         flex-direction: column; 

@@ -32,7 +32,7 @@
     <p>Who doesn't like to stick it to a tyrannical government while enjoying a cup of tea and breakfast for dinner, Eggs in a Basket. </p>
     <!-- Recipe: Eggs in a nest-->
     <div id="recipePick" *ngFor="let recipe of recipeAPI.recipes">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{recipe.recipe.label}}</h4>
             <button (click)="addRecipeFavorites(recipe.recipe)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -50,7 +50,7 @@
 
     <!-- Movie: V for Vendetta -->
     <div id="moviePick" *ngFor="let results of tasteApi.entertainmentResults">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{results.Name}}</h4>
             <button (click)="addMovieFavorites(results)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -73,7 +73,7 @@
     <p>Why risk it for the bisket when you can risk it for this brisket? Turn on those ovens troop!</p>
     <!-- Recipe: Brisket - the kind that's cooked, not BBQ -->
     <div id="recipePick" *ngFor="let recipe of recipeAPI.recipes">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{recipe.recipe.label}}</h4>
             <button (click)="addRecipeFavorites(recipe.recipe)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -91,7 +91,7 @@
 
     <!-- Movie: Troop Bevery Hills -->
     <div id="moviePick" *ngFor="let results of tasteApi.entertainmentResults">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{results.Name}}</h4>
             <button (click)="addMovieFavorites(results)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -114,7 +114,7 @@
 
     <!-- Recipe: Salmon Pasta -->
     <div id="recipePick" *ngFor="let recipe of recipeAPI.recipes">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{recipe.recipe.label}}</h4>
             <button (click)="addRecipeFavorites(recipe.recipe)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -132,7 +132,7 @@
 
     <!-- Movie: Enough -->
     <div id="moviePick" *ngFor="let results of tasteApi.entertainmentResults">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{results.Name}}</h4>
             <button (click)="addMovieFavorites(results)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -154,7 +154,7 @@
     <p>Grab a furry four legged friend and enjoy some ratatouille while watching Ratatouille</p>
     <!-- Recipe: Ratatoulle -->
     <div id="recipePick" *ngFor="let recipe of recipeAPI.recipes">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{recipe.recipe.label}}</h4>
             <button (click)="addRecipeFavorites(recipe.recipe)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -172,7 +172,7 @@
 
     <!-- Movie: search for Shrek do Ratatouille displays -->
     <div id="moviePick" *ngFor="let results of tasteApi.entertainmentResults">
-        <div>
+        <div class= "favoriteLabel">
             <h4>{{results.Name}}</h4>
             <button (click)="addMovieFavorites(results)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
@@ -189,3 +189,4 @@
     </div>
     
 </div>
+
