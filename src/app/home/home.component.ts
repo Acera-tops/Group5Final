@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
   toggleHannah=():void=>{
     this.Hannah = !this.Hannah;
     this.foodSearch="brisket";
-    this.movieSearch="True Beverly Hills";
+    this.movieSearch="Men in Black II";
     this.recipeAPI.getRecipes(this.foodSearch);
     this.tasteApi.getTaste(this.movieSearch); 
   }
@@ -48,7 +48,7 @@ export class HomeComponent implements OnInit {
   toggleCherina=():void=>{
     this.Cherina = !this.Cherina;
     this.foodSearch="salmon pasta";
-    this.movieSearch="Enough";
+    this.movieSearch="He's just not that into you";
     this.recipeAPI.getRecipes(this.foodSearch);
     this.tasteApi.getTaste(this.movieSearch); 
   }

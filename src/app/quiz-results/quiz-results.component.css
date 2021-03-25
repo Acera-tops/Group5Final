@@ -3,6 +3,7 @@
     font-weight: 300;
     font-style: normal; 
     text-decoration: none;
+    font-family: sutro,serif;
 }
 
 .quizResults {
@@ -11,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: sutro,serif;
 }
 
 .addFavorite {
@@ -20,6 +22,7 @@
 
 h2 {
     margin: 30px;
+    font-family: sutro,serif;
 }
 
 button {
@@ -40,6 +43,7 @@ iframe{
 
 p{
     width: 80%;
+    font-family: sutro,serif;
 }
 
 body {
